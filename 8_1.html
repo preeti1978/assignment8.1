@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*Main div: grey background for form*/
+.bckgrnd-grey{
+ background-color: #f2f2f2;
+ position:absolute;
+ top:100px; left:200px; /*leave space of 100 from top and from left*/
+width:75%; /*leave some space on left and right of browser page*/
+margin:auto; /*for centre align*/
+float:left; /*all contents within this main div will float to left*/
+}
+
+ h1 {
+   color:  #001a66; /*color of main h1 title: 'Enter the System'*/
+   font-family: "Times New Roman", Times, serif;
+   font-weight:bold;
+ }
+
+/*The LHS div for Register*/
+
+#div1{
+width:40%;
+float:left;
+color:#666666; /*grey*/
+ font-weight:bold;
+margin:20px; /*some space between this and adjacent div2*/
+
+}
+
+/*The RHS div for login*/
+#div2{
+    width:40%;
+    background-color: #1E4766;
+    float:left;
+    font-weight:bold;
+    color:white;
+margin:20px;
+height:300px;
+}
+.blue-font{
+    color:#1E4766;
+}
+/*txt boxes within div1*/
+.regTxtBox{
+    border-radius: 0px / 0px ;
+     border-style:groove;
+        border-color: red;
+    height: 30px;
+    width: 380px;
+    float:right;
+    border-width:3px;
+
+}
+/*text boxes within div2*/
+.loginTxtBox{
+border-radius: 0px / 0px ;
+     border-style:groove;
+    position:relative;
+        left:10px;
+    height: 30px;
+    width: 350px;
+    left:20px;
+}
+/*general button*/
+.button {
+  
+    border: solid;
+    color: white;
+    float:right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding:5px;
+    cursor: pointer;
+    width:100px;
+}
+.button4 {background-color: #e7e7e7; color: #1E4766;} /* Gray */
+.button5 {background-color: #1E4766; color: white; border-color:orange; margin:15px;} /*blue*/
+a {color:white;} /*link*/
+h4{
+color:grey;
+}
+</style>
+</head>
+<body >
+<div class="bckgrnd-grey">
+    <h1>Enter the System</h1>
+    <br>
+    <h4>It is necessary to login Your account in order to sign up for a course.</h4>
+    <div id="div1">
+        ARE YOU NEW? <span class="blue-font">REGISTER</span><br><br>   
+        <form name="frm_register" id="frm_register">
+            <input class="regTxtBox" type="text" placeholder="Username"><br><br><br>
+            <input class="regTxtBox" type="text" placeholder="Email"><br><br><br>
+            <input class="regTxtBox" type="text" placeholder="Password"><br><br><br>
+            <input class="regTxtBox" type="text" placeholder="Confirm Password"><br>
+            <button class="button button4">Register</button>       
+        </form>
+    </div>
+   
+    <div id="div2">
+        <span style="position:relative;top:5px;left:5px;">ALREADY A STUDENT? LOGIN</span><br><br>
+        <form name="frm_login" id="frm_login">
+            <input class="loginTxtBox" type="text" placeholder="User name"><br><br>
+            <input class="loginTxtBox" type="text" placeholder="Password"><br><br>
+            <input type="checkbox" style="border-radius: 0px / 0px ; ">Remember Me?           
+            <table style="float:right;line-height:20%;" cellpadding=0 cellspacing=0>
+                <tr>
+                    <td>
+                        <button class="button button5">Login</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span style="float:right;margin:7px;color:white;"><small><a href="forgotPassword">Forgot Password?</a></small></span>       
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+   
+</div>
+</body>
+</html>
